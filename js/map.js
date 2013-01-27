@@ -24,9 +24,9 @@ else {
 
 function displayLocation(position) {
 
-	var latitude = 12.928673;
+	var latitude = position.coords.latitude;
 
-	var longitude = 77.629049;
+	var longitude = position.coords.longitude;
 
 /*
 	var div = document.getElementById("location");
@@ -40,7 +40,7 @@ function displayLocation(position) {
 }
 
 function showMap(coords){
-    var googleLatAndLong= new google.maps.LatLng(12.928673,77.629049);
+    var googleLatAndLong= new google.maps.LatLng(coords.latitude,coords.longitude);
 
     var googleLatAndLong2= new google.maps.LatLng(12.928464,77.631043);
     
